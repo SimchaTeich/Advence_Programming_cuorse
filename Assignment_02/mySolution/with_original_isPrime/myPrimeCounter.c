@@ -1,7 +1,5 @@
-/*******************************************************************************************************************
-* Greate thanks to https://www.sanfoundry.com/c-program-implement-rabin-miller-primality-test-check-number-prime/  *
-* about miller-rabin algo                                                                                          *
-* and for https://stackoverflow.com/questions/4586405/how-to-get-the-number-of-cpus-in-linux-using-c               *
+/*******************************************************************************************************************                                                                                         *
+* Greate thanks for https://stackoverflow.com/questions/4586405/how-to-get-the-number-of-cpus-in-linux-using-c     *
 * about the code gives the number of processors                                                                    *
 ********************************************************************************************************************/
 #include <stdio.h>
