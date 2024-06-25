@@ -150,14 +150,17 @@ int main()
 	pthread_t *threads        = (pthread_t *)malloc(number_of_processors * sizeof(pthread_t));
 	int i                     = 0;
 	
+    // create threads
 	for (i = 0; i < number_of_processors; ++i)
         pthread_create(&threads[i], NULL, partialPrimeCounter, NULL);
 
+    // wait for join all of them
     for (i = 0; i < number_of_processors; ++i)
         pthread_join(threads[i], NULL);
 
+    // print results
     printf("%d total primes.\n", total_counter);
-	
+    
 	free(threads);
     return 0;
 }
