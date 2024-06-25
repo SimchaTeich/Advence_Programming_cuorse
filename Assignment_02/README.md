@@ -20,11 +20,46 @@ time ./randomGenerator 10 10000000 | ./primeCounter
 ![](./01%20-%20original%20counter%20results.png)
 
 In conclusion:
-* time for 10M numbers: 0m43.341s
-* memory for 10M numbers: 696KB
+* time for 10M numbers: `0m43.341s`
+* memory for 10M numbers: `696KB`
 
 
 ## Solution with original `isPrime` function
+Go to the [with_original_isPrime](./mySolution/with_original_isPrime/) folder and run the following commands:
 
+```
+make
+```
+```
+time ./randomGenerator 10 10000000 | ./myPrimeCounter
+```
+![](./02%20-%20my%20counter%20with%20original%20isPrime%20results.png)
+
+```
+./randomGenerator 10 10000000 | /usr/bin/time -v ./myPrimeCounter
+```
+![](./03%20-%20my%20counter%20with%20original%20isPrime%20results.png)
+
+In conclusion:
+* time for 10M numbers: `0m12.501s`
+* memory for 10M numbers: `832KB`
 
 ## Solutions with my `isPrime` function
+Go to the [with_my_isPrime](./mySolution/with_my_isPrime/) folder and run the following commands:
+
+```
+make
+```
+```
+time ./randomGenerator 10 10000000 | ./myPrimeCounter
+```
+![](./04%20-%20my%20counter%20with%20my%20isPrime%20results.png)
+
+```
+./randomGenerator 10 10000000 | /usr/bin/time -v ./myPrimeCounter
+```
+![](./05%20-%20my%20counter%20with%20my%20isPrime%20results.png)
+
+In conclusion:
+* time for 10M numbers: `0m3.129s`
+* memory for 10M numbers: `832KB`
