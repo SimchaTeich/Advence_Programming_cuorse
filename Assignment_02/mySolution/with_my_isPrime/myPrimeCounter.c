@@ -13,7 +13,6 @@
 
 #define CHUNK_SIZE 1000
 
-
 int             total_counter;                             /* the counter        */
 pthread_mutex_t counter_lock = PTHREAD_MUTEX_INITIALIZER;  /* the counter's lock */
 pthread_mutex_t stream_lock  = PTHREAD_MUTEX_INITIALIZER;  /* stdin lock         */
